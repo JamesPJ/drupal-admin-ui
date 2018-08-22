@@ -9,6 +9,8 @@ async function api(
   options.credentials = 'include';
   options.headers = options.headers || {};
 
+  console.log(process.env);
+
   switch (endpoint) {
     case 'menu':
       url = '/admin-api/menu?_format=json';
